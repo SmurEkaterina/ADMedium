@@ -1,0 +1,48 @@
+{% extends "src/njc/layout.njc" %}
+
+{% block content %}
+<div class="registration-page">
+    <div class="registration-page-content">
+        <div class="main-logo">
+            <a href="./index.html">
+                <img src="img/base/main-logo.png">
+            </a>
+        </div>
+
+        <div class="auth-block">
+            <div class="auth__wrapper">
+                <p class="auth__title">
+                    Вход
+                </p>
+                <div class="btn-close">
+                    <a href="./index.html">
+
+                    </a>
+                </div>
+                <form>
+                    <div class="auth-form">
+                        <div class="auth-form__data">
+                            <input type="text" placeholder="Электронная почта" class="auth-form__email">
+                            <input type="password" class="auth-form__password" placeholder="Пароль">
+                        </div>
+
+                        <div class="auth-form__remember default-checkbox__wrapper">
+                            <label for="auth-form__checkbox" class="default-checkbox__label">
+                                <input type="checkbox" class="default-checkbox" id="auth-form__checkbox" checked>
+                                <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                <span class="checkbox-text">запомнить меня</span>
+                            </label>
+                        </div>
+
+                        <div class="auth-form__btn-group">
+                            <a class="main-btn" href="./company-list.html">Войти</a>
+                            <!--<button type="submit" class="enter-btn">Войти</button>-->
+                            <a href="#" class="auth-form__forgot-password">Забыли пароль?</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>   
+</div>
+{% endblock %}

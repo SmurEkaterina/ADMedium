@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <script src="js/scripts.min.js"></script>
+	
+
+<div class="content">
+    <div class="sidebar-menu">
+        <div class="sidebar-menu-logo">
+            <a href="./index.html" >
+                <img src="img/base/sidebar-logo.png" alt="ADMedium" width="166" height="47">
+            </a>
+        </div>
+
+
+        <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list-item">
+                <a href="#">
+                    <img class="sidebar-menu-list-item-image" src="img/sidebar/icon_home.png" alt="Рабочий стол">
+                    <span class="sidebar-menu-list-item-title">Рабочий стол</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list-item sidebar-menu-list-item__active">
+                <a href="./company-list.html">
+                    <img class="sidebar-menu-list-item-image" src="img/sidebar/icon_companies.png" alt="Кампании">
+                    <span class="sidebar-menu-list-item-title">Кампании</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list-item">
+                <a href="./clients-list.html">
+                    <img class="sidebar-menu-list-item-image" src="img/sidebar/icon_clients.png" alt="Клиенты">
+                    <span class="sidebar-menu-list-item-title">Клиенты</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list-item">
+                <a href="./statistics.html">
+                    <img class="sidebar-menu-list-item-image" src="img/sidebar/icon_statistic.png" alt="Статистика">
+                    <span class="sidebar-menu-list-item-title">Статистика</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-main">
+
+            <div class="content-main__header">
+                <div class="user-auth-block">
+                    <div class="user-auth-block-notification">
+                        <img src="img/companies-list/icon_notification.png" alt="">
+                        <span  class="user-auth-block-notification-count">1</span>
+                    </div>
+
+                    <div class="user-auth-block-username">
+                        <div class="user-auth-block-login">Иванов А.</div>
+                        <a href="#" class="user-auth-block-btn"> </a>
+
+                        <ul class="user-auth-block-username__hvr">
+                            <li class="user-auth-block-username__hvr__item">
+                                <a href="#">
+                                    Входящие
+                                </a>
+                            </li>
+
+                            <li class="user-auth-block-username__hvr__item">
+                                <a href="#">
+                                    Настройки
+                                </a>
+                            </li>
+
+                            <li class="user-auth-block-username__hvr__item">
+                                <a href="#">
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="user-auth-block-avatar">
+                        <a href="#"><img src="img/base/avatar_default.png" alt="Аватар"></a>
+                    </div>
+                </div>
+
+                <div class="companies-header">
+                    <div class="companies-header-names">
+                        <h2 class="companies-header-names-title">Кампании</h2>
+                        <div class="companies-header-names-select select-btn">
+                            <span class="companies-header-names-name select-btn__name js-show-companies-list" data-name="tesla">ООО &laquo;Тесла Моторс&raquo;</span>
+                            <a class="companies-header-names-button select-btn__button js-show-companies-list" href="#"></a>
+                            <div class="search-client__wrapper">
+                                <form>
+                                    <div class="search-client">
+                                        <input type="text" placeholder="поиск клиента" class="search-client__input">
+                                        <ul class="search-client__list hvr__list">
+                                            <li class="search-client__item hvr__item">
+                                                <a href="#">ОАО «Рога и копыта интернешнл»</a>
+                                            </li>
+                                            <li class="search-client__item hvr__item" data-value="tesla">
+                                                <a href="#">ООО «Тесла Моторс»</a>
+                                            </li>
+                                            <li class="search-client__item hvr__item">
+                                                <a href="#">Vershi</a>
+                                            </li>
+                                            <li class="search-client__item hvr__item">
+                                                <a href="#">ГУП «Алтайтомат»</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="companies-header-button">
+                        <a class="main-btn" href="#">Создать компанию</a>
+                    </div>
+                </div>
+
+                <div class="companies-toggle">
+                    <ul class="companies-toggle__list">
+                        <li class="companies-toggle__item">
+                            <a href="#" class="companies-toggle__item__link">Все</a>
+                            <span>26</span>
+                        </li>
+                        <li class="companies-toggle__item companies-toggle__item__active" data-name="active">
+                            <a href="#" class="companies-toggle__item__link active">Активные</a>
+                            <span>12</span>
+                        </li>
+                        <li class="companies-toggle__item" data-name="completed">
+                            <a href="#" class="companies-toggle__item__link completed">Завершенные</a>
+                            <span>12</span>
+                        </li>
+                        <li class="companies-toggle__item">
+                            <a href="#" class="companies-toggle__item__link">Черновики</a>
+                            <span>2</span>
+                        </li>
+                        <li class="companies-toggle__item">
+                            <a href="#" class="companies-toggle__item__link completed">Отложенные</a>
+                            <span>3</span>
+                        </li>
+                        <li class="companies-toggle__item">
+                            <a href="#" class="companies-toggle__item__link completed">Удаленные</a>
+                            <span>2</span>
+                        </li>
+                        <li class="companies-toggle__item">
+                            <a href="#" class="companies-toggle__item__link completed">На модерации</a>
+                            <span>5</span>
+                        </li>
+
+                        <li class="companies-toggle__item__btn">
+                            <a href="javascript: void(0);" class="companies-toggle__item__btn__link js-show-companies-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <div class="companies-toggle__item_hvr">
+                                <a href="javascript: void(0);" class="companies-toggle__item__btn__link js-show-companies-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                                <ul class="companies-toggle-hvr-list hvr__list">
+                                    <li class="hvr__item"><a href="#">Все</a></li>
+                                    <li class="hvr__item"><a href="#">Активные</a></li>
+                                    <li class="hvr__item"><a href="#">Завершенные</a></li>
+                                    <li class="hvr__item"><a href="#">Черновики</a></li>
+                                    <li class="hvr__item"><a href="#">Отложенные</a></li>
+                                    <li class="hvr__item"><a href="#">Удаленные</a></li>
+                                    <li class="hvr__item"><a href="#">На модерации</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="companies-filters-search-button__wrapper js-show-companies-filter">
+                        <a href="javascript: void(0);" class="companies-filters-search-button"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="campaign-list-empty">
+                <img src="img/companies-list/icon_campaign-list-empty.png">
+                <p class="campaign-list-empty__title">
+                    Активных кампаний нет
+                </p>
+
+                <div class="create-now">
+                    <a href="#" class="btn-link">
+                        Создать сейчас
+                    </a>
+                </div>
+
+                <div class="start-tour">
+                    <a href="#" class="btn-link">
+                        запустить тур
+                    </a>
+                </div>
+
+            </div>
+
+
+
+
+
+        <footer>
+            <ul class="footer__list">
+                <li class="footer__list__item">
+                    <a href="./content-page.html">Помощь</a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#">Контакты</a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#">Пользовательское соглашение</a>
+                </li>
+            </ul>
+            <p class="footer__license">
+                &copy;AdMedium, 2015—2016
+            </p>
+        </footer>
+    </div>
+</div>
+
+
+
+</body>
+</html>

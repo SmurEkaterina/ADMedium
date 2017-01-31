@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <script src="js/scripts.min.js"></script>
+	
+<div class="content">
+    <div class="sidebar-menu">
+        <div class="sidebar-menu-logo">
+            <a href="./index.html" >
+                <img src="img/base/sidebar-logo.png" alt="ADMedium" width="166" height="47">
+            </a>
+        </div>
+
+
+        <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list-item">
+                <a href="#">
+                    <img class="sidebar-menu-list-item-image" src="img/sidebar/icon_home.png" alt="Рабочий стол">
+                    <span class="sidebar-menu-list-item-title">Рабочий стол</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list-item">
+                <a href="./company-list.html">
+                    <img class="sidebar-menu-list-item-image" src="img/sidebar/icon_companies.png" alt="Кампании">
+                    <span class="sidebar-menu-list-item-title">Кампании</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list-item">
+                <a href="./clients-list.html">
+                    <img class="sidebar-menu-list-item-image" src="img/sidebar/icon_clients.png" alt="Клиенты">
+                    <span class="sidebar-menu-list-item-title">Клиенты</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-list-item">
+                <a href="./statistics.html">
+                    <img class="sidebar-menu-list-item-image" src="img/sidebar/icon_statistic.png" alt="Статистика">
+                    <span class="sidebar-menu-list-item-title">Статистика</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-main campaign-editing">
+        <div class="content-title">
+            <p class="content-title__name">
+                Редактирование кампании
+            </p>
+
+
+            <div class="btn-close__wrapper">
+                <a href="./profile.html" class="btn-close">
+
+                </a>
+            </div>
+
+        </div>
+
+        <div class="campaign-editing__item campaign-editing__item__general">
+            <p class="campaign-editing__item__title">
+                Общая информация
+            </p>
+
+            <ul class="campaign-editing__list">
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Название кампании
+                    </div>
+                    <div class="campaign-editing__list__item__content">
+                        <input type="text" value="Продвижение на премиальных площадках" class="campaign-editing__input">
+                    </div>
+                </li>
+
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Клиент
+                    </div>
+                    <div class="campaign-editing__list__item__content">
+                        <input type="text" placeholder="ООО «Тесла Моторс»" class="campaign-editing__input campaign-editing__input__disabled" disabled>
+                    </div>
+                </li>
+
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Группа кампаний
+                    </div>
+                    <div class="campaign-editing__list__item__content select-group">
+                        <select class="default-select default-select_grey">
+                            <option selected>Без группы</option>
+                            <option>Весна</option>
+                            <option>Лето</option>
+                            <option>Осень</option>
+                            <option>Зима</option>
+                        </select>
+                        <a href="#" class="btn-link">
+                            + Добавить новую группу
+                        </a>
+                    </div>
+                </li>
+
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Тип размещения
+                    </div>
+                    <div class="campaign-editing__list__item__content type-disposition">
+                        <div class="default-checkbox__wrapper">
+                            <label for="mobile" class="default-checkbox__label">
+                                <input type="checkbox" class="default-checkbox" id="mobile" checked>
+                                <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                <span class="checkbox-text">Мобильные устройства</span>
+                            </label>
+                        </div>
+                        <div class="default-checkbox__wrapper">
+                            <label for="computer" class="default-checkbox__label">
+                                <input type="checkbox" class="default-checkbox" id="computer" checked>
+                                <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                <span class="checkbox-text">Компьютеры</span>
+                            </label>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="campaign-editing__item campaign-editing__item__budget">
+            <p class="campaign-editing__item__title">
+                Сроки и бюджет
+            </p>
+
+            <ul class="campaign-editing__list">
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Даты проведения
+                    </div>
+                    <div class="campaign-editing__list__item__content date-select">
+                        <div class="input__calendar__wrapper">
+                            <label class="campaign-editing__calendar__label">
+                                <input type="text" value="с 25.05.2016" class="campaign-editing__input campaign-editing__input__calendar campaign-editing__input__calendar__first">
+                                <button class="campaign-editing__calendar__btn"></button>
+                            </label>
+
+                            <label class="campaign-editing__calendar__label">
+                                <input type="text" value="по 25.05.2016" class="campaign-editing__input campaign-editing__input__calendar campaign-editing__input__calendar__last">
+                                <button class="campaign-editing__calendar__btn"></button>
+                            </label>
+
+                        </div>
+                        <div class="default-checkbox__wrapper">
+                            <label for="time" class="default-checkbox__label">
+                                <input type="checkbox" class="default-checkbox" id="time" checked>
+                                <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                <span class="checkbox-text">без срока окончания</span>
+                            </label>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Бюджет
+                    </div>
+                    <div class="campaign-editing__list__item__content">
+                        <input type="text" value="100 000 руб." class="campaign-editing__input campaign-editing__input__budget">
+                        <p class="text-note">
+                            Минимально возможный бюджет — 50 000 руб.
+                        </p>
+                    </div>
+                </li>
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Ограничение бюджета в сутки
+                    </div>
+                    <div class="campaign-editing__list__item__content">
+                        <input type="text" value="50 000 руб." class="campaign-editing__input  campaign-editing__input__budget">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="campaign-editing__item campaign-editing__item__theme">
+            <p class="campaign-editing__item__title">
+                Тематический сегмент
+            </p>
+
+            <ul class="campaign-editing__list">
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Выберите темы
+                    </div>
+
+                    <div class="campaign-editing__list__item__content theme-block">
+                        <ul class="theme__list">
+                            <li class="default-checkbox__wrapper">
+                                <label for="car" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="car" checked>
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Авто</span>
+                                </label>
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="finance" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="finance" checked>
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Финансы</span>
+                                </label>
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="technology" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="technology" checked>
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Техника</span>
+                                </label>
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="property" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="property" checked>
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Недвижимость</span>
+                                </label>
+
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="medicine" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="medicine">
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Медицина</span>
+                                </label>
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="tourism" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="tourism">
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Туризм и отдых</span>
+                                </label>
+                            </li>
+
+                            <li class="default-checkbox__wrapper">
+                                <label for="fmpg" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="fmpg">
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">FMPG</span>
+                                </label>
+
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="transport" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="transport" checked>
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Логистика и транспорт</span>
+                                </label>
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="retail" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="retail">
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Ритейл</span>
+                                </label>
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="entertainment" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="entertainment">
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Развлечения и медиа</span>
+                                </label>
+
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="it" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="it">
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Телекоммуникации и IT</span>
+                                </label>
+
+                            </li>
+                            <li class="default-checkbox__wrapper">
+                                <label for="education" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="education">
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">Образование</span>
+                                </label>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="campaign-editing__item campaign-editing__item__audience">
+            <p class="campaign-editing__item__title">
+                Целевая аудитория
+            </p>
+
+            <ul class="campaign-editing__list">
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Пол
+                    </div>
+
+                    <div class="campaign-editing__list__item__content">
+                        <select class="default-select campaign-editing__select">
+                            <option>Не имеет значения</option>
+                            <option>Мужчины</option>
+                            <option>Женщины</option>
+                        </select>
+                    </div>
+                </li>
+
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Возраст
+                    </div>
+
+                    <div class="campaign-editing__list__item__content audience__block">
+                        <ul class="audience__list">
+                            <li class="default-checkbox__wrapper">
+                                <label for="age-1" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="age-1">
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">до 10</span>
+                                </label>
+                            </li>
+
+                            <li class="default-checkbox__wrapper">
+                                <label for="age-2" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="age-2" checked>
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">11—16</span>
+                                </label>
+                            </li>
+
+                            <li class="default-checkbox__wrapper">
+                                <label for="age-3" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="age-3" checked>
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">17—26</span>
+                                </label>
+                            </li>
+                        </ul>
+
+                        <ul class="audience__list">
+                            <li class="default-checkbox__wrapper">
+                                <label for="age-4" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="age-4" checked>
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">27—40</span>
+                                </label>
+                            </li>
+
+                            <li class="default-checkbox__wrapper">
+                                <label for="age-5" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="age-5" checked>
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">41—60</span>
+                                </label>
+
+                            </li>
+
+                            <li class="default-checkbox__wrapper">
+                                <label for="age-6" class="default-checkbox__label">
+                                    <input type="checkbox" class="default-checkbox" id="age-6">
+                                    <span class="checkbox-icon"><img src="img/base/auth-form__remember_checked.png" width="19" height="16"></span>
+                                    <span class="checkbox-text">от 61</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="campaign-editing__list__item audience__region">
+                    <div class="campaign-editing__list__item__title">
+                        Регионы
+                    </div>
+
+                    <div class="campaign-editing__list__item__content region-select">
+                        <div class="region-select__item js-show-companies-list">
+                            <div class="default-select campaign-editing__select"><span class="js-select-field-result">Санкт-Петербург</span></div>
+
+                            <div class="search-client__wrapper">
+                                <form>
+                                    <div class="search-client">
+                                        <input type="text" placeholder="поиск региона" class="search-client__input">
+
+                                        <ul class="search-client__list hvr__list">
+                                            <li class="search-client__item hvr__item">
+                                                <a href="javascript: void(0);">Санкт-Петербург</a>
+                                            </li>
+                                            <li class="search-client__item hvr__item" data-value="tesla">
+                                                <a href="javascript: void(0);">Москва</a>
+                                            </li>
+                                            <li class="search-client__item hvr__item">
+                                                <a href="javascript: void(0);">Нижний Новгород</a>
+                                            </li>
+                                            <li class="search-client__item hvr__item">
+                                                <a href="javascript: void(0);">Казань</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="delete-btn__wrapper">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+
+                        <div class="region-select__item">
+                            <select class="default-select campaign-editing__select">
+                                <option>Санкт-Петербург</option>
+                                <option selected>Москва</option>
+                                <option>Нижний Новгород</option>
+                                <option>Казань</option>
+                            </select>
+                            <div class="delete-btn__wrapper">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+
+                        <div class="region-select__item">
+                            <select class="default-select campaign-editing__select">
+                                <option>Санкт-Петербург</option>
+                                <option>Москва</option>
+                                <option selected>Нижний Новгород</option>
+                                <option>Казань</option>
+                            </select>
+                            <div class="delete-btn__wrapper">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+
+                        <div class="region-select__item">
+                            <select class="default-select default-select_grey campaign-editing__select">
+                                <option value="" disabled selected hidden>добавьте регион из списка</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Москва</option>
+                                <option>Нижний Новгород</option>
+                                <option>Казань</option>
+                            </select>
+                            <div class="delete-btn__wrapper">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="campaign-editing__item campaign-editing__item__parameter">
+            <p class="campaign-editing__item__title">
+                Параметры показов
+            </p>
+
+            <ul class="campaign-editing__list parameter__list">
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Частота показов<br>
+                        на пользователя
+                    </div>
+                    <div class="campaign-editing__list__item__content">
+                        <select class="default-select campaign-editing__select">
+                            <option>Без ограничений</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="campaign-editing__list__item">
+                    <div class="campaign-editing__list__item__title">
+                        Скорость открутки
+                    </div>
+                    <div class="campaign-editing__list__item__content">
+                        <select class="default-select campaign-editing__select">
+                            <option>Равномерная</option>
+                        </select>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="campaign-editing__footer">
+            <div class="campaign-editing__footer__btn">
+                <a href="./profile.html" class="main-btn">Сохранить</a>
+                <a href="./profile.html" class="btn-link">Отмена</a>
+            </div>
+            <div class="campaign-editing__delete-btn">
+                <a href="#">Удалить кампанию</a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>
