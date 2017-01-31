@@ -1,0 +1,114 @@
+.sidebar-menu {
+	width: 270px;
+	background: #3c3c46;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+.sidebar-menu-logo {
+	background: #303036;
+	padding: 25px 0;
+	text-align: center;
+}
+
+.sidebar-menu-list-item {
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 18px;
+	color: #fff;
+	text-align: left;
+	border-bottom: 1px solid #303036;
+	cursor: pointer;
+	position: relative;
+
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 24px 0 24px 50px;
+	}
+
+	&:hover {
+		background: #565667;
+	}
+
+	&__active {
+		background: #565667;
+	}
+}
+
+.sidebar-menu-list-item-image {
+	vertical-align: middle;
+	margin-right: 30px;
+}
+
+.sidebar-menu-list-item-title {
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+}
+
+
+@media all and (max-width: 1220px)  {
+	.swiper-container {
+		width: 100%;
+	}
+
+	.content-main,
+	.registration-page-content {
+		min-height: 1900px;
+		justify-content: flex-start;
+		position: relative;
+	}
+
+	footer {
+		flex-grow: 1;
+	}
+
+	.form-wrapper {
+		position: absolute;
+		left: 50%;
+		top: 30%;
+		margin: -306px 0 0 -237px;
+	}
+
+	.sidebar-menu {
+		width: 78px;
+	}
+
+	.sidebar-menu-list-item-title {
+		display: none;
+		position: absolute;
+		top: 15px;
+		left:60px;
+		padding: 15px;
+		background: rgba(0,0,0, 0.8);
+		min-width: 120px;
+		z-index: 25;
+	}
+
+	.sidebar-menu-list-item {
+		a {
+			padding: 25px;
+		}
+
+		&:hover {
+			.sidebar-menu-list-item-title {
+				display: block;
+			}
+		}
+	}
+
+	.sidebar-menu-logo {
+		width: 100%;
+		height: 50px;
+		background: #303036 url('../img/base/sidebar-logo-small.png') 100% 50% no-repeat;
+
+		img {
+			display: none;
+		}
+	}
+
+	.companies-filters-search-button__wrapper {
+		margin-left: 20px;
+	}
+}
